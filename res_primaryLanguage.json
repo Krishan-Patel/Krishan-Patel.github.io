@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Davina Griss. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Dorota1997. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Welcome",
+      "description": "Hi! I'm Krishan Patel, a Computer Science student at the University of Waterloo with professional experience working in Javascript and ReactJS/React-Native. I possess strong communication and interpersonal skills along with technical knowledge in Javascript, C/C++ and Python. I am interested in understanding the inner workings of software and hope to work as a Software Engineer building impactful large-scale software applications.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -11,107 +11,279 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "GameCenter",
+        "startDate": "August 2020 - Present",
+        "description": "GameCenter is a new tab override chrome extension. It replaces Chrome's default new tab page with a responsive, customizable page that displays live statistics (scores, odds, player stat-lines). The live statistics update while the page is active and in the background, even when a chrome window isn't open. The extension also allows users to customize the page background, bookmarks and which sports leagues they wish to follow. The motivation behind this project was to create an extension that allowed me to keep track of sports scores for the NBA and NHL playoff bubbles during the pandemic. At that time, there were a lot of games going on simultaneously and I found it inconvenient having to check each game's score individually, so I created a solution. The extension has evolved to supporting 7 different sports leagues including, the NFL, NBA, NHL, MLB and College Basketball/Football and English Premier League.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          { "type": "img", 
+            "src" : "/images/portfolio/GameCenter/p1.png"
+          },
+          { "type": "img", 
+            "src" : "/images/portfolio/GameCenter/p2.png"
+          },
+          { "type": "vid", 
+            "src" : "/images/portfolio/GameCenter/v1.mov"
+          },
+          { "type": "vid", 
+            "src" : "/images/portfolio/GameCenter/v2.mov"
+          },
+          { "type": "vid", 
+            "src" : "/images/portfolio/GameCenter/v3.mov"
+          }
         ],
-        "url": "",
+        "url": "https://chrome.google.com/webstore/detail/gamecenter/bogoecddicljbomiglggipdkigoliekd",
+        "sourceCode": "https://github.com/Krishan-Patel/GameCenter-ChromeExtension",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-html5-plain",
+            "name": "HTML"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-chrome-plain",
+            "name": "Extensions API"
           }
         ]
       },
       {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+        "title": "LiveView",
+        "startDate": "December 2021",
+        "description": "LiveView is a web-based Peer-to-Peer video chat application that allows users to broadcast video and audio streams to other users in the chat via a P2P connection. Beyond audio and video, the room host can live-stream their computer's display to all other users in the call. The use of Peer-to-Peer connections provides low latency allowing users to enjoy synchronized video playback, an integrated text chat box and audio/video streams creating the optimal watching experience.", 
         "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
+          { "type": "img", 
+            "src" : "/images/portfolio/LiveView/p1.png"
+          },
+          { "type": "img", 
+            "src" : "/images/portfolio/LiveView/p2.png"
+          },
+          { "type": "img", 
+            "src" : "/images/portfolio/LiveView/p3.png"
+          },
+          { "type": "vid", 
+            "src" : "/images/portfolio/LiveView/vid1.mov"
+          }
         ],
-        "url": "https://github.com",
+        "url": "https://peerliveview.herokuapp.com/",
+        "sourceCode": "https://github.com/Krishan-Patel/LiveView",
         "technologies": [
           {
             "class": "devicon-react-original",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-express-original",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-nodejs-plain",
+            "name": "Node"
+          },
+          {
+            "class": "devicon-bootstrap-plain",
+            "name": "Boostrap"
+          },
+          {
+            "class": "devicon-heroku-plain",
+            "name": "Heroku"
           }
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "StockNow",
+        "startDate": "April 2021",
+        "description": "StockNow is a full-stack stocks website that displays up-to-date stock prices and trends for 500+ stocks from the NYSE. Stock prices are obtained from a RapidAPI endpoint, stored in a PostgreSQL database and updated every 5 minutes. The app's frontend then fetches the stock data from the database speeding up the user experience by a factor of 10X as repeated calls to the slow API endpoint are avoided. StockNow lets users search stocks by name and favourite stocks to view them on their homepage for easy and quick access.", 
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/StockNow/p1.png"
+          }, 
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/StockNow/p2.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/StockNow/p3.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/StockNow/p4.png"
+          }
         ],
-        "url": "https://github.com",
+        "url": "https://frozen-waters-61791.herokuapp.com/stocks/all/",
+        "sourceCode":  "https://github.com/Krishan-Patel/StockNow",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-django-plain",
+            "name": "Django"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-css3-plain",
+            "name": "CSS"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-bootstrap-plain",
+            "name": "Bootstrap"
+          },
+          {
+            "class": "devicon-postgresql-plain",
+            "name": "PostgreSQL"
+          },
+          {
+            "class": "devicon-heroku-plain",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+      {
+        "title": "Seam Carver",
+        "startDate": "November 2021",
+        "description": "Seam Carver is an image processing algorithm written in Java. It implements a content-aware image resizing function that enables image resizing while maintaining the aspect ratio and image contents unlike traditional resizing methods like cropping. The algorithm uses a dual-gradient energy function and a linear-time shortest path algorithm based on a topological sort to identify the lowest energy 'seam' in the image and remove the seam. I optimized the algorithm using memoization to decrease the number of repeated calculations. This is done by only recalculating pixel energies along the removed seam. This optimization reduced the running time by a factor of 10x for 500px by 500px images.", 
+        "images": [
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p1.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p2.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p3.jpeg"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p4.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p5.jpeg"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p6.png"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p7.jpeg"
+          },
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/SeamCarver/p8.png"
+          }
+        ],
+        "url": "",
+        "sourceCode": "https://github.com/Krishan-Patel/SeamCarver",
+        "technologies": [
+          {
+            "class": "devicon-java-plain",
+            "name": "Java"
+          }
+        ]
+      }, 
+      {
+        "title": "Biquadris",
+        "startDate": "August 2021",
+        "description": "I developed Biquadris with two other individuals for our summative project in an Object-Oriented Programming course. Our implementation of Biquadris included both text-based and graphical versions of the game. The game featured 9 rotating blocks, 6 levels, customized level-based scoring, row clearing and Tetris gravity. As part of our implementation, we made use of various OOP concepts including; inheritance, polymorphism, encapsulation as well as the Decorator and MCV design patterns.", 
+        "images": [
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/Biquadris/p1.png"
+          }, 
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/Biquadris/p2.png"
+          }
+        ],
+        "url": "",
+        "sourceCode": "",
+        "technologies": [
+          {
+            "class": "devicon-cplusplus-plain",
+            "name": "C++"
+          }
+        ]
+      },
+      {
+        "title": "Task Manager",
+        "startDate": "July 2020",
+        "description": "The motivation behind Task Manager was to create a task-managing application that solved the issues I had with other applications. Some of the issues included; improving accessibility by making the application accessible from inside the browser, syncing tasks between devices, showing completed tasks and daily progress. To solve these issues, I created a chrome extension that is integrated into the browser allowing for easy access. Task Manager tracks the completed and incomplete tasks and clears completed tasks daily.", 
+        "images": [
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/TaskManager/p1.png"
+          }, 
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/TaskManager/p2.png"
+          }, 
+          { 
+            "type": "img", 
+            "src" : "/images/portfolio/TaskManager/p3.png"
+          }
+        ],
+        "url": "",
+        "sourceCode": "https://github.com/Krishan-Patel/TaskManager-Browser-Extension",
+        "technologies": [
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          },
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS"
+          },
+          {
+            "class": "devicon-chrome-plain",
+            "name": "Extensions API"
           }
         ]
       }
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "University of Waterloo - Cynorix Inc.",
+        "title": "Software Developer",
+        "years": "Sept 2021 - Dec 2021",
+        "description": "During Fall 2021, I worked as a Software Developer at Cynorix Inc. During my time at the company, I worked on their Secure Video Conferencing and Secure File Sharing products. I published and maintained the iOS apps for both applications using React-Native. I implemented hands-free multi-factor authentication on iOS for the video-conferencing application. I used Node, React, MongoDB and Express to implement various features including, processing user transactions, user referrals, account changes and meeting creation. I used Electron and C++ when working on the desktop application for the file-sharing product to help develop file encryption, file compression and file sharing features.",
         "mainTech": [
-          "Angular 8/9/10"
+          "React",
+          "Node"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "ReactJS",
+          "React-Native",
+          "NodeJS", 
+          "Express", 
+          "Bootstrap", 
+          "HTML/CSS", 
+          "MongoDB", 
+          "Electron", 
+          "C++" 
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Digitize Tech",
+        "title": "Program Mentor",
+        "years": "July 2020 - August 2020",
+        "description":"As a program mentor for Digitize Tech, I held one on one tutorial sessions with underprivileged kids to help introduce them to the fundamentals of computer science with python. I was responsible for structuring the lesson plans based on the individual's experience and organizing learning material",
         "mainTech": [
-          "Angular 7/8"
+          "Python"
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
         ]
       }
     ]
