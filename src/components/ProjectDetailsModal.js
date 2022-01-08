@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Modal } from "react-bootstrap";
 import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
-import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
 class ProjectDetailsModal extends Component {
   render() {
@@ -12,6 +11,7 @@ class ProjectDetailsModal extends Component {
       var title = this.props.data.title;
       var description = this.props.data.description;
       var url = this.props.data.url;
+      var sourceCode = this.props.data.sourceCode; 
       if (this.props.data.technologies) {
         var tech = technologies.map((icons, i) => {
           return (
@@ -30,7 +30,22 @@ class ProjectDetailsModal extends Component {
         });
         if (this.props.data.images) {
           var img = images.map((elem, i) => {
-            return <div key={i} data-src={elem} />;
+            return elem.type === 'img' ? <div key={i} data-src={elem.src} /> :  
+            <div key={i} >
+              <video
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  objectFit: "contain"
+                }}
+                controls
+                autoPlay
+                src={elem.src}
+              />
+            </div>
           });
         }
       }
@@ -43,34 +58,29 @@ class ProjectDetailsModal extends Component {
         centered
         className="modal-inside"
       >
+       <span style={{display: 'flex', flexDirection: 'row', margin: '10px 0 0 10px', justifyContent: 'space-between'}}>
+        { sourceCode ? (
+        <a href={sourceCode}>
+          <span>
+            <div className="text-center">
+              <i className="fab fa-github" style={{ fontSize: "300%", color: '#26408B' }}>
+                <p className="text-center" style={{ fontSize: "50%" }}>
+                  Github
+                </p>
+              </i>
+            </div>
+          </span>
+        </a>
+        ) : null}
         <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"></i>
         </span>
+       </span>
         <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
-            <div className="slider-tab">
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="emojione:red-circle"
-                data-inline="false"
-                style={{ marginLeft: "5px" }}
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:yellow-circle"
-                data-inline="false"
-              ></span>{" "}
-              &nbsp;{" "}
-              <span
-                className="iconify slider-iconfiy"
-                data-icon="twemoji:green-circle"
-                data-inline="false"
-              ></span>
-            </div>
+          <div className="col-md-10 mx-auto mw-100" style={{ paddingBottom: "50px" }}>
             <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-              animation="scaleOutAnimation"
+              cssModule={[AwesomeSliderStyles]}
+              animation="foldOutAnimation"
               className="slider-image"
             >
               {img}
