@@ -58,23 +58,8 @@ class ProjectDetailsModal extends Component {
         centered
         className="modal-inside"
       >
-       <span style={{display: 'flex', flexDirection: 'row', margin: '10px 0 0 10px', justifyContent: 'space-between'}}>
-        { sourceCode ? (
-        <a href={sourceCode}>
-          <span>
-            <div className="text-center">
-              <i className="fab fa-github" style={{ fontSize: "300%", color: '#26408B' }}>
-                <p className="text-center" style={{ fontSize: "50%" }}>
-                  Github
-                </p>
-              </i>
-            </div>
-          </span>
-        </a>
-        ) : null}
         <span onClick={this.props.onHide} className="modal-close">
           <i className="fas fa-times fa-3x close-icon"></i>
-        </span>
        </span>
         <div className="col-md-12">
           <div className="col-md-10 mx-auto mw-100" style={{ paddingBottom: "50px" }}>
@@ -87,22 +72,37 @@ class ProjectDetailsModal extends Component {
             </AwesomeSlider>
           </div>
           <div className="col-md-10 mx-auto">
-            <h3 style={{ padding: "5px 5px 0 5px" }}>
-              {title}
-              {url ? (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-href"
-                >
-                  <i
-                    className="fas fa-external-link-alt"
-                    style={{ marginLeft: "10px" }}
-                  ></i>
+            <span style={{display: 'flex', flexDirection: 'row', margin: '10px 0 0 10px', justifyContent: 'space-between'}}>
+              <h3 style={{ padding: "5px 5px 0 5px" }}>
+                {title}
+                {url ? (
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-href"
+                  >
+                    <i
+                      className="fas fa-external-link-alt"
+                      style={{ marginLeft: "10px" }}
+                    ></i>
+                  </a>
+                ) : null}
+              </h3>
+              { sourceCode ? (
+                <a href={sourceCode}>
+                  <span>
+                    <div className="text-center">
+                      <i className="fab fa-github" style={{ fontSize: "250%", color: '#26408B' }}>
+                        <p className="text-center" style={{ fontSize: "50%" }}>
+                          Github
+                        </p>
+                      </i>
+                    </div>
+                  </span>
                 </a>
-              ) : null}
-            </h3>
+                ) : null}
+            </span>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">
               <ul className="list-inline mx-auto">{tech}</ul>
@@ -115,3 +115,4 @@ class ProjectDetailsModal extends Component {
 }
 
 export default ProjectDetailsModal;
+

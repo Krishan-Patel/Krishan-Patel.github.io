@@ -255,13 +255,37 @@
     ],
     "experience": [
       {
+        "company": "SS&C Technologies",
+        "icon": "fab fa-java experience-icon",
+        "title": "Full Stack Developer",
+        "years": "May 2022 - Aug 2022",
+        "description": "During Spring 2022, I worked at SS&C Technologies as a Full Stack Developer. The team I was a part of was working on SS&C Lyric, an initiative designed to modernize the company's recordkeeping platform by transitioning to a cloud-native architecture. As part of my work with the team, I implemented column-level encryption in Java using encryption as a service provided by HashiCorp Vault. I developed a Vault Utility, extending the functionality provided by the Spring Cloud Vault Library to address a lack of support for the team's needs. I used Kafka, Vault and the Java Reflections API to develop a key-rewrapping utility compatible with all of the company's microservices. I worked with the DevOps team to set up GitHub Workflows that automate the deployment of microservices to Kubernetes. I created a Github Action in Node.JS that automates repository creation and setup for new microservices based on SDLC requirements outlined by the DevOps team.",
+        "mainTech": [
+          "Java",
+          "Spring Boot", 
+          "PostgreSQL"
+        ], 
+        "technologies": [
+          "Java", 
+          "Spring Boot", 
+          "PostgreSQL", 
+          "Apache Kafka", 
+          "HashiCorp Vault", 
+          "Kubernetes",
+          "Docker", 
+          "GitHub API"
+        ]
+      },
+      {
         "company": "University of Waterloo - Cynorix Inc.",
-        "title": "Software Developer",
+        "icon": "fab fa-js experience-icon",
+        "title": "Full Stack Developer",
         "years": "Sept 2021 - Dec 2021",
         "description": "During Fall 2021, I worked as a Software Developer at Cynorix Inc. During my time at the company, I worked on their Secure Video Conferencing and Secure File Sharing products. I published and maintained the iOS apps for both applications using React-Native. I implemented hands-free multi-factor authentication on iOS for the video-conferencing application. I used Node, React, MongoDB and Express to implement various features including, processing user transactions, user referrals, account changes and meeting creation. I used Electron and C++ when working on the desktop application for the file-sharing product to help develop file encryption, file compression and file sharing features.",
         "mainTech": [
           "React",
-          "Node"
+          "Express", 
+          "MongoDB"
         ],
         "technologies": [
           "ReactJS",
@@ -277,6 +301,7 @@
       },
       {
         "company": "Digitize Tech",
+        "icon": "fab fa-python experience-icon",
         "title": "Program Mentor",
         "years": "July 2020 - August 2020",
         "description":"As a program mentor for Digitize Tech, I held one on one tutorial sessions with underprivileged kids to help introduce them to the fundamentals of computer science with python. I was responsible for structuring the lesson plans based on the individual's experience and organizing learning material",

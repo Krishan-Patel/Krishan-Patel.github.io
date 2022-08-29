@@ -64,7 +64,7 @@ class Projects extends Component {
     return (
       <section id="portfolio" style={{backgroundColor: "#A6CFD5"}}>
         <div className="col-md-12">
-          <h1 className="section-title" style={{color: "black", font: "32px/40px 'opensans-bold', sans-serif"}}>
+          <h1 className="section-title" style={{color: "black", font: "40px/48px 'opensans-bold', sans-serif"}}>
             <span>{sectionName}</span>
           </h1>
           <div className="col-md-12 mx-auto">
