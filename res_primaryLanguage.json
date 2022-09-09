@@ -54,7 +54,7 @@
       },
       {
         "title": "LiveView",
-        "startDate": "December 2021",
+        "startDate": "January 2022 - Present",
         "description": "LiveView is a web-based Peer-to-Peer video chat application that allows users to broadcast video and audio streams to other users in the chat via a P2P connection. Beyond audio and video, the room host can live-stream their computer's display to all other users in the call. The use of Peer-to-Peer connections provides low latency allowing users to enjoy synchronized video playback, an integrated text chat box and audio/video streams creating the optimal watching experience.", 
         "images": [
           { "type": "img", 
@@ -145,7 +145,7 @@
       },
       {
         "title": "Seam Carver",
-        "startDate": "November 2021",
+        "startDate": "April 2021",
         "description": "Seam Carver is an image processing algorithm written in Java. It implements a content-aware image resizing function that enables image resizing while maintaining the aspect ratio and image contents unlike traditional resizing methods like cropping. The algorithm uses a dual-gradient energy function and a linear-time shortest path algorithm based on a topological sort to identify the lowest energy 'seam' in the image and remove the seam. I optimized the algorithm using memoization to decrease the number of repeated calculations. This is done by only recalculating pixel energies along the removed seam. This optimization reduced the running time by a factor of 10x for 500px by 500px images.", 
         "images": [
           { 
