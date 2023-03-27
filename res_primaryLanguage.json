@@ -255,6 +255,27 @@
     ],
     "experience": [
       {
+        "company": "Ford Motor Company",
+        "icon": "fab fa-java experience-icon",
+        "title": "Cloud Software Developer",
+        "years": "Jan 2023 - Apr 2023",
+        "description": "During Winter 2023, I worked as a Cloud Software Developer at Ford on their Analytics Server team. The team was responsible for developing and maintaining analytic tools to report and track vehicle issues from both consumer and internal testing vehicles. The team worked closely with the Embedded, Data Science and UAT teams. During my time a Ford, I implemented a Speech Processor that transcribes and translated audio feedback from customers from various languages using the Google Cloud Speech and Translation APIs. I helped implement various other features requested by the team's internal stakeholders many of which required me to update the application DB schema using DDL and DML SQL scripts and perform ETLs when the changes went live. Finally, as part of my work on the team, I identified redundancies in the team's micro-services and proposed a fix which resulted in a 25% improvement in processing performance.",
+        "mainTech": [
+          "Java",
+          "Spring Boot", 
+          "SQL Server"
+        ], 
+        "technologies": [
+          "Java", 
+          "Spring Boot", 
+          "SQL Server", 
+          "RabbitMQ", 
+          "Jira Cloud API",
+          "Google Cloud Platform",
+          "JavaScript"
+        ]
+      },
+      {
         "company": "SS&C Technologies",
         "icon": "fab fa-java experience-icon",
         "title": "Full Stack Developer",
