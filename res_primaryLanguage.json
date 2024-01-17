@@ -12,7 +12,6 @@
     "projects": [
       {
         "title": "GameCenter",
-        "startDate": "August 2020 - Present",
         "description": "GameCenter is a new tab override chrome extension. It replaces Chrome's default new tab page with a responsive, customizable page that displays live statistics (scores, odds, player stat-lines). The live statistics update while the page is active and in the background, even when a chrome window isn't open. The extension also allows users to customize the page background, bookmarks and which sports leagues they wish to follow. The motivation behind this project was to create an extension that allowed me to keep track of sports scores for the NBA and NHL playoff bubbles during the pandemic. At that time, there were a lot of games going on simultaneously and I found it inconvenient having to check each game's score individually, so I created a solution. The extension has evolved to supporting 7 different sports leagues including, the NFL, NBA, NHL, MLB and College Basketball/Football and English Premier League.",
         "images": [
           { "type": "img", 
@@ -54,7 +53,6 @@
       },
       {
         "title": "LiveView",
-        "startDate": "January 2022 - Present",
         "description": "LiveView is a web-based Peer-to-Peer video chat application that allows users to broadcast video and audio streams to other users in the chat via a P2P connection. Beyond audio and video, the room host can live-stream their computer's display to all other users in the call. The use of Peer-to-Peer connections provides low latency allowing users to enjoy synchronized video playback, an integrated text chat box and audio/video streams creating the optimal watching experience.", 
         "images": [
           { "type": "img", 
@@ -97,7 +95,6 @@
       },
       {
         "title": "StockNow",
-        "startDate": "April 2021",
         "description": "StockNow is a full-stack stocks website that displays up-to-date stock prices and trends for 500+ stocks from the NYSE. Stock prices are obtained from a RapidAPI endpoint, stored in a PostgreSQL database and updated every 5 minutes. The app's frontend then fetches the stock data from the database speeding up the user experience by a factor of 10X as repeated calls to the slow API endpoint are avoided. StockNow lets users search stocks by name and favourite stocks to view them on their homepage for easy and quick access.", 
         "images": [
           { 
@@ -145,7 +142,6 @@
       },
       {
         "title": "Seam Carver",
-        "startDate": "April 2021",
         "description": "Seam Carver is an image processing algorithm written in Java. It implements a content-aware image resizing function that enables image resizing while maintaining the aspect ratio and image contents unlike traditional resizing methods like cropping. The algorithm uses a dual-gradient energy function and a linear-time shortest path algorithm based on a topological sort to identify the lowest energy 'seam' in the image and remove the seam. I optimized the algorithm using memoization to decrease the number of repeated calculations. This is done by only recalculating pixel energies along the removed seam. This optimization reduced the running time by a factor of 10x for 500px by 500px images.", 
         "images": [
           { 
@@ -192,7 +188,6 @@
       }, 
       {
         "title": "Biquadris",
-        "startDate": "August 2021",
         "description": "I developed Biquadris with two other individuals for our summative project in an Object-Oriented Programming course. Our implementation of Biquadris included both text-based and graphical versions of the game. The game featured 9 rotating blocks, 6 levels, customized level-based scoring, row clearing and Tetris gravity. As part of our implementation, we made use of various OOP concepts including; inheritance, polymorphism, encapsulation as well as the Decorator and MCV design patterns.", 
         "images": [
           { 
@@ -215,7 +210,6 @@
       },
       {
         "title": "Task Manager",
-        "startDate": "July 2020",
         "description": "The motivation behind Task Manager was to create a task-managing application that solved the issues I had with other applications. Some of the issues included; improving accessibility by making the application accessible from inside the browser, syncing tasks between devices, showing completed tasks and daily progress. To solve these issues, I created a chrome extension that is integrated into the browser allowing for easy access. Task Manager tracks the completed and incomplete tasks and clears completed tasks daily.", 
         "images": [
           { 
@@ -255,6 +249,27 @@
     ],
     "experience": [
       {
+        "company": "Auvik Networks",
+        "icon": "fab fa-js experience-icon",
+        "title": "Backend Developer",
+        "years": "Sept 2023 - Dec 2023",
+        "description": "During Fall 2023, I interned as a Backend Developer at Auvik Networks working on ASM, the company's  SAAS management product. I leveraged React, Node and Express to develop the product's backend infrastructure by making Postgres DB changes, maintaining REST APIs and fixing user-reported issues. A key achievement during my term was leading development efforts to enhance DB query speeds. This involved introducing an aggregate database table and creating a dedicated processor to maintain the table efficiently, utilizing AWS SQS. The implementation resulted in up to 10X faster performance across various components of the application. In addition to technical contributions, I assumed Epic Ownership responsibilities, collaborating with stakeholders to plan, develop, and deliver a feature that was crucial in preventing churn and ultimately boosting customer satisfaction. Finally, I leveraged the JEST framework to author automated tests, achieving  100% code coverage for all my contributions.",
+        "mainTech": [
+          "Node",
+          "React", 
+          "PostgreSQL"
+        ], 
+        "technologies": [
+          "ReactJS",
+          "NodeJS", 
+          "Express", 
+          "PostgreSQL", 
+          "JEST", 
+          "AWS",
+          "SQL"
+        ]
+      },
+      {
         "company": "Ford Motor Company",
         "icon": "fab fa-java experience-icon",
         "title": "Cloud Software Developer",
@@ -271,8 +286,7 @@
           "SQL Server", 
           "RabbitMQ", 
           "Jira Cloud API",
-          "Google Cloud Platform",
-          "JavaScript"
+          "Google Cloud Platform"
         ]
       },
       {
