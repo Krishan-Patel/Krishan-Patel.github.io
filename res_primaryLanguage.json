@@ -249,6 +249,46 @@
     ],
     "experience": [
       {
+        "company": "Waabi",
+        "icon": "fab fa-python experience-icon",
+        "title": "Software Engineer",
+        "years": "Sept 2024 - Dec 2024",
+        "description": "During Fall 2024, I am interning as a Software Engineer at Waabi, contributing to the simulation team. My work primarily focuses on runtime optimizations for the Waabi World simulator, enhancing performance in training, regression testing, and safety testing of Waabi’s autonomous vehicle fleet. This work is critical in ensuring efficient simulation-based testing, a key factor in advancing Waabi’s cutting-edge autonomous driving technologies.",
+        "mainTech": [
+          "Python", 
+          "Rust"
+        ],
+        "technologies": [
+          "Python",
+          "AWS",
+          "Simulation", 
+          "Rust", 
+          "AWS",
+          "Bazel", 
+          "Rust"
+        ]
+      },      
+      {
+        "company": "ResQ",
+        "icon": "fab fa-js experience-icon",
+        "title": "Full Stack Developer",
+        "years": "May 2024 - Aug 2024",
+        "description": "During Summer 2024, I worked as a Full Stack Developer at ResQ, focusing on enhancing the company's internal preventative maintenance feature. I integrated calendar and scheduling systems, streamlining maintenance workflows for thousands of clients by utilizing Django, GraphQL, and React/React Native. One of my key contributions was developing a bulk importer tool that automated onboarding processes for large clients, which doubled the adoption rate of the maintenance feature and reduced client onboarding time by 50%. Additionally, I optimized the scalability of the application by profiling and refactoring database queries using Datadog, which resulted in 30% faster load times across the platform.",
+        "mainTech": [
+          "Django",
+          "GraphQL",
+          "React"
+        ],
+        "technologies": [
+          "Django",
+          "GraphQL",
+          "React",
+          "React Native",
+          "Datadog",
+          "AWS"
+        ]
+      },      
+      {
         "company": "Auvik Networks",
         "icon": "fab fa-js experience-icon",
         "title": "Backend Developer",
